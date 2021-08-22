@@ -21,8 +21,6 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 public_tweets = api.home_timeline()
 
 images =[]
-st.columns(5)
-
 
 for tweet in public_tweets:
   if 'media' in tweet.entities:
